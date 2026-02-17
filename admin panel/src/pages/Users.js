@@ -62,9 +62,8 @@ const Users = () => {
           id: data?._id,
           isActive: (
             <span
-              className={`capitalize px-3 py-1 rounded-sm w-[65px] flex items-center justify-center ${
-                data?.isActive ? "bg-green-400" : "bg-red-400"
-              }`}
+              className={`capitalize px-3 py-1 rounded-sm w-[65px] flex items-center justify-center ${data?.isActive ? "bg-green-400" : "bg-red-400"
+                }`}
             >
               {data?.isActive ? "Active" : "Inactive"}
             </span>
@@ -116,8 +115,8 @@ const Users = () => {
             columns={columns}
             exportData={exportData || []}
             marginTop={true}
-            onRowEdit={() => {}}
-            handleRedirect={() => {}}
+            onRowEdit={() => { }}
+            handleRedirect={() => { }}
           />
         </div>
       </div>
